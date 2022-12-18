@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <div class="content-section">
+        <p>You have successfully logged out.</p>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                You can <a class="ml-2" href=" {% url 'register' %} ">log back in</a>.
+            </small>
+        </div>
+    </div>
+{% endblock %}
